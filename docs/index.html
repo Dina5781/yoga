@@ -1,131 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Yoga in the Mall</title>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&family=Open+Sans&display=swap" rel="stylesheet">
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
-    body {
-      font-family: 'Open Sans', sans-serif;
-      background: #f8f9fa;
-      color: #333;
-      line-height: 1.6;
-    }
-
-    header {
-      background: linear-gradient(120deg, #5a8f7b, #88bba1);
-      color: #fff;
-      padding: 60px 20px;
-      text-align: center;
-    }
-
-    header h1 {
-      font-family: 'Playfair Display', serif;
-      font-size: 3rem;
-      margin-bottom: 10px;
-    }
-
-    header p {
-      font-size: 1.2rem;
-    }
-
-    section {
-      max-width: 1000px;
-      margin: 40px auto;
-      padding: 30px;
-      background: #ffffff;
-      box-shadow: 0 5px 20px rgba(0,0,0,0.05);
-      border-radius: 12px;
-    }
-
-    h2 {
-      color: #5a8f7b;
-      margin-bottom: 20px;
-      font-size: 2rem;
-    }
-
-    .schedule {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 30px;
-    }
-
-    .schedule div {
-      flex: 1;
-      min-width: 250px;
-    }
-
-    ul {
-      list-style-type: disc;
-      padding-left: 20px;
-    }
-
-    .cta-button {
-      display: inline-block;
-      background-color: #5a8f7b;
-      color: #fff;
-      padding: 12px 25px;
-      border: none;
-      border-radius: 6px;
-      text-decoration: none;
-      margin-top: 20px;
-      font-size: 1rem;
-      transition: background-color 0.3s ease;
-    }
-
-    .cta-button:hover {
-      background-color: #45715f;
-    }
-
-    .contact-info {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 40px;
-    }
-
-    .contact-info div {
-      flex: 1;
-    }
-
-    footer {
-      background: #333;
-      color: #fff;
-      padding: 20px;
-      text-align: center;
-      margin-top: 60px;
-    }
-
-    a {
-      color: #5a8f7b;
-    }
-
-    @media (max-width: 600px) {
-      header h1 {
-        font-size: 2rem;
-      }
-      section {
-        margin: 20px;
-      }
-    }
-  </style>
+  <link rel="stylesheet" href="styles.css" />
 </head>
-
 <body>
-  <header>
-    <h1>Yoga in the Mall</h1>
-    <p>Relax. Reconnect. Revive your energy in a space of calm.</p>
-  </header>
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="classes.html">Classes</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
 
-  <section>
-    <h2>Class Schedule</h2>
-    <div class="schedule">
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Yoga in the Mall</h1>
+      <p>Relax. Reconnect. Revive. Join us for group and private yoga classes in the heart of Los Angeles.</p>
+      <a href="classes.html" class="cta-button">View Classes</a>
+    </div>
+  </section>
+
+  <!-- Main Content -->
+  <main>
+    <section class="intro">
+      <h2>Welcome to Your Oasis</h2>
+      <p>Yoga in the Mall offers a unique blend of traditional yoga and modern wellness in a serene indoor setting. Whether you're a seasoned yogi or just starting out, our classes are designed to help you feel balanced and rejuvenated.</p>
+      <img src="images/yoga-class.jpg" alt="People practicing yoga indoors">
+    </section>
+
+    <section class="highlight">
+      <h2>Why Choose Us?</h2>
+      <ul>
+        <li>Experienced, certified instructor with a passion for holistic health</li>
+        <li>Convenient location at Westminster Mall with free parking</li>
+        <li>Classes for all levels, including Vinyasa and Restorative styles</li>
+        <li>Private sessions tailored to your goals</li>
+      </ul>
+    </section>
+
+    <section class="schedule">
       <div>
         <h3>Group Classes</h3>
         <ul>
@@ -135,38 +54,14 @@
       </div>
       <div>
         <h3>Private Sessions</h3>
-        <p>Available by appointment.</p>
+        <p>By appointment. Email us to schedule your session tailored to your personal needs.</p>
       </div>
-    </div>
-  </section>
+    </section>
+  </main>
 
-  <section>
-    <h2>About Your Instructor</h2>
-    <p>Hello! I'm <strong>Dina</strong>, a passionate yoga instructor with a journey rooted in the heart of Mysore, India, where I studied the Ashtanga technique and philosophy. With years of teaching experience, I offer both dynamic Vinyasa Flow and soothing Restorative Yoga classes to help you find balance and peace at any skill level.</p>
-    <h3>Pricing</h3>
-    <ul>
-      <li>Group Class: $20 per class</li>
-      <li>Private Session: $80 per hour</li>
-    </ul>
-  </section>
-
-  <section>
-    <h2>Contact Me</h2>
-    <div class="contact-info">
-      <div>
-        <h3>Email</h3>
-        <p><a href="mailto:dina.on.the.mat@gmail.com">dina.on.the.mat@gmail.com</a></p>
-      </div>
-      <div>
-        <h3>Location</h3>
-        <p> 1025 Westminster Mall, Westminster, CA 92683</p>
-      </div>
-    </div>
-    <a href="mailto:dina.on.the.mat@gmail.com" class="cta-button">Book a Class</a>
-  </section>
-
+  <!-- Footer -->
   <footer>
-    <p>&copy; 2025 Yoga in the Mall. All rights reserved.</p>
+    <p>&copy; 2025 Yoga in the Mall. All rights reserved. | <a href="mailto:dina.on.the.mat@gmail.com">Contact Us</a></p>
   </footer>
 </body>
 </html>
